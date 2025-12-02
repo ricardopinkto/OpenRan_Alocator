@@ -7,13 +7,11 @@ import folium
 import time
 
 # ---
-# 1. PARÂMETROS DE SIMULAÇÃO (VALORES ARBITRADOS PARA O PCC)
+# 1. PARÂMETROS DE SIMULAÇÃO (VALORES ARBITRADOS)
 # ---
-# Estes são os valores que você irá justificar e talvez variar no seu TCC.
 
 print("Inicializando script de otimização OpenRAN...")
 
-# Semente para reprodutibilidade (para que os resultados sejam os mesmos toda vez)
 random.seed(42)
 
 # --- 1.1 Parâmetros Geográficos ---
@@ -45,7 +43,7 @@ COSTO_INST_CU = 5000  # Custo de ativação de um site de CU (mais caro/centrali
 COSTO_LINK_FH = 2     # Custo por metro do link de Fronthaul (RU -> DU)
 COSTO_LINK_MH = 1     # Custo por metro do link de Midhaul (DU -> CU)
 
-# --- 1.4 Parâmetros de Restrição (Baseado nos Artigos) ---
+# --- 1.4 Parâmetros de Restrição ---
 # !! PARÂMETROS AGRESSIVAMENTE RELAXADOS !!
 
 # Distância/Latência do Fronthaul
